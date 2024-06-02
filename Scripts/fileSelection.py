@@ -2,6 +2,11 @@ import shutil
 import os
 
 
-path = input('Path: ')
+def fileSelection():
+    path = input('Path: ')
 
-shutil.move(path, f"{os.getcwd()}/processing")
+    w = shutil.move(path, f"{os.getcwd()}/processing")
+    
+    if w:
+        return True
+    return False
