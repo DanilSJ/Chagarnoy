@@ -1,4 +1,5 @@
 import os
 
-if not os.path.exists("output/"):
-    os.mkdir("output/")
+def checkFolder():
+    if not os.path.exists("output/"):
+        os.mkdir("output/")
