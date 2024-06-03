@@ -1,9 +1,10 @@
 import shutil
+from readFile import readFile
 import os
 
 
 def fileSelection(path):
     try:
-        shutil.move(path, f"{os.getcwd()}/processing")
+        readFile(path)
     except Exception as error:
         print(error)
