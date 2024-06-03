@@ -2,6 +2,6 @@ from .readFile import readFile
 
 def fileSelection(path):
     try:
-        readFile(path)
+        return readFile(path)
     except Exception as error:
-        print(error)
+        return print(error)
