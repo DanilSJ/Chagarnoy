@@ -1,7 +1,4 @@
-import shutil
-from readFile import readFile
-import os
-
+from .readFile import readFile
 
 def fileSelection(path):
     try:
